@@ -7,7 +7,6 @@ import useSWRImmutable from "swr/immutable";
 
 jest.mock("swr/immutable", () => jest.fn());
 
-// Mocking the useParams and useLocation hooks
 jest.mock("react-router", () => ({
   useParams: jest.fn(),
   useLocation: jest.fn(),
@@ -15,10 +14,7 @@ jest.mock("react-router", () => ({
 
 describe("DetailsPage", () => {
   beforeEach(() => {
-    // Clear the mock implementation of fetch before each test
-    // (fetch as jest.Mock).mockClear();
-
-    useParams.mockReturnValue({ id: "1" }); // Mock useParams to return an article ID
+    useParams.mockReturnValue({ id: "1" });
     useLocation.mockReturnValue({
       state: {
         articleDetail: {
@@ -28,7 +24,7 @@ describe("DetailsPage", () => {
           byline: "Test Author",
         },
       },
-    }); // Mock useLocation to return articleDetail state
+    });
   });
 
   test("renders loading state", () => {
@@ -38,23 +34,7 @@ describe("DetailsPage", () => {
     expect(getByText("Loading...")).toBeInTheDocument();
   });
 
-  // test("renders error state", async () => {
-  //   // Mocking useSWRImmutable to return an error
-  //   const errorMessage = "Not found";
-  //   const statusText = "Page not found";
-
-  //   useSWRImmutable.mockReturnValueOnce({
-  //     data: {results:[]},
-  //     error: { message: errorMessage, statusText },
-  //   });
-
-  //   const { getByText } = render(<DetailsPage />);
-
-  //   expect(getByText(statusText)).toBeInTheDocument();
-  // });
-
   test("renders article details", async () => {
-    // Mocking useSWRImmutable to return mock data
     useSWRImmutable.mockReturnValue({
       data: {
         results: [

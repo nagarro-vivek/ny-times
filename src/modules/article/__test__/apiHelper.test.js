@@ -1,11 +1,9 @@
 import { fetcher } from "../api/apiHelper";
 
-// Mock the global fetch function
 global.fetch = jest.fn();
 
 describe("fetcher", () => {
   beforeEach(() => {
-    // Clear the mock implementation of fetch before each test
     fetch.mockClear();
   });
 
@@ -29,7 +27,6 @@ describe("fetcher", () => {
     fetch.mockRejectedValue(new Error(errorMessage));
 
     const url = "https://example.com/api";
-
     await expect(fetcher(url)).rejects.toThrow(errorMessage);
   });
 });

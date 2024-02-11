@@ -43,19 +43,6 @@ describe("LandingPage", () => {
     expect(screen.getByText("Loading...")).toBeInTheDocument();
   });
 
-  // test("renders error state", () => {
-  //   const errorMessage = "Not found";
-  //   const statusText = "Page not found";
-
-  //   useSWRImmutable.mockReturnValueOnce({
-  //     data: undefined,
-  //     error: new Error(),
-  //   });
-  //   render(<LandingPage />);
-
-  //   expect(getByText("Sorry, an unexpected error has occurred.")).toBeInTheDocument();
-  // });
-
   test("renders articles", async () => {
     render(<LandingPage />);
 
@@ -65,50 +52,3 @@ describe("LandingPage", () => {
     });
   });
 });
-
-// describe("Landing 1", () => {
-//   beforeEach(() => {
-//     jest.clearAllMocks();
-//     useSWRImmutable.mockReturnValue({
-//       data: {
-//         results: [
-//           {
-//             id: 1,
-//             title: "Article 1",
-//             published_date: "2022-01-01",
-//             byline: "Author 1",
-//           },
-//           {
-//             id: 2,
-//             title: "Article 2",
-//             published_date: "2022-01-02",
-//             byline: "Author 2",
-//           },
-//         ],
-//       },
-//       error: null,
-//     });
-//   });
-
-//   test("clicking on article card navigates to details page", async () => {
-//     const navigate = jest.fn();
-//     jest.spyOn(router, "useNavigate").mockImplementation(() => navigate);
-
-//     render(<LandingPage />);
-
-//     fireEvent.click(screen.getByText("Article 1"));
-
-//     await waitFor(() => {
-//       expect(navigate).toHaveBeenCalledWith("/details/1", {
-//         state: {
-//           articleDetail: {
-//             byline: "Author 1",
-//             id: 1,
-//             published_date: "2022-01-01",
-//             title: "Article 1",
-//           },
-//         },
-//       });
-//     });
-//   });
-// });

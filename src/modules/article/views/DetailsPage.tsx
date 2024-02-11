@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import {
   Container,
@@ -26,7 +25,7 @@ interface Article {
   byline: string;
   section: string;
   subsection: string;
-  media: any[]
+  media: any[];
 }
 
 const DetailsPage: React.FC = () => {
