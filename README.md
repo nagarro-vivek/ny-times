@@ -41,30 +41,9 @@ This will start the application and open it in your default web browser.
 - `sonarqube`: Runs linting, tests with coverage, and sends results to SonarQube for analysis.
 - `cypress`: Runs Cypress tests.
 
-### Dependencies
+### Sonar Report
 
-- `@emotion/react`: 11.11.3
-- `@emotion/styled`: 11.11.0
-- `@mui/icons-material`: 5.15.9
-- `@mui/material`: 5.15.9
-- `@testing-library/jest-dom`: 5.17.0
-- `@testing-library/react`: 13.4.0
-- `@testing-library/user-event`: 13.5.0
-- `@types/jest`: 27.5.2
-- `@types/node`: 16.18.79
-- `@types/react`: 18.2.55
-- `@types/react-dom`: 18.2.19
-- `react`: 18.2.0
-- `react-dom`: 18.2.0
-- `react-router-dom`: 6.22.0
-- `swr`: 2.2.4
-- `typescript`: 4.9.5
-- `web-vitals`: 2.1.4
+![Screenshot 2024-02-12 at 1 53 42 PM](https://github.com/nagarro-vivek/ny-times/assets/64078724/97c633f4-cc8c-4fa8-9f27-ce36d5b396be)
 
-### Development Dependencies
 
-- `@cypress/code-coverage`: 3.12.20
-- `cypress`: 13.6.4
-- `eslint`: 8.56.0
-- `jest`: 27.5.1
-- `sonarqube-scanner`: 3.3.0
+
