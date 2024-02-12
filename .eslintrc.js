@@ -27,6 +27,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "react"],
   rules: {
     "no-undef": "off",
+    "@typescript-eslint/no-explicit-any": "off",
   },
   settings: {
     react: {
