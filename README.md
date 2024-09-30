@@ -1,8 +1,20 @@
-## My NY Times
+## NY Times
 
 ### Description
 
 This project is a web application that fetches and displays articles from the New York Times Most Popular API. Users can view popular articles and see detailed information about each article.
+
+The following routes/pages are included in this application:
+
+Articles Listing Page - This page will retrieve the most popular articles from the New York Times API and display them using a grid layout.
+Description Page - This page will show the details of the chosen article.
+
+### Screenshot of the pages
+
+![Landing Page](public/landingpage.png)
+
+![Details Page](public/detailsPage.png)
+
 
 ### Installation
 
@@ -12,7 +24,7 @@ This project is a web application that fetches and displays articles from the Ne
    ```
 2. Navigate to the project directory:
    ```
-   cd my-ny-times
+   cd ny-times
    ```
 3. Install dependencies:
    ```
@@ -24,10 +36,23 @@ This project is a web application that fetches and displays articles from the Ne
 To start the development server, run:
 
 ```
-npm start
+npm run start
 ```
 
 This will start the application and open it in your default web browser.
+
+### Technology stack
+
+React v18.3
+React Router v6
+SWR
+ESlint for linting
+Prettier for code formatting
+SonarQube for code anaylsis
+Material UI v5
+React testing library
+Jest
+Cypress
 
 ### Scripts
 
