@@ -68,7 +68,9 @@ Cypress
 
 ### Sonar Report
 
-![Screenshot 2024-02-12 at 1 53 42 PM](https://github.com/nagarro-vivek/nye-times/assets/64078724/97c633f4-cc8c-4fa8-9f27-ce36d5b396be)
+![Sonar report](public/sonar.png)
+
+
 
 
 
