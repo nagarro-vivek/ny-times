@@ -6,7 +6,7 @@ This project is a web application that fetches and displays articles from the Ne
 
 The following routes/pages are included in this application:
 
-Articles Listing Page - This page will retrieve the most popular articles from the New York Times API and display them using a grid layout.
+**Articles Listing Page** - This page will retrieve the most popular articles from the New York Times API and display them using a grid layout.
 Description Page - This page will show the details of the chosen article.
 
 ### Screenshot of the pages
@@ -33,13 +33,24 @@ Description Page - This page will show the details of the chosen article.
 
 ### Usage
 
-To start the development server, run:
+### To start the development server, run:
 
 ```
 npm run start
 ```
 
 This will start the application and open it in your default web browser.
+
+### To build the project
+ - run :
+
+```
+npm run build
+```
+
+ - Verify the build:
+
+After the build process is completed, you should see a build folder in your project directory. You can serve the production build locally using any static server, or upload it to your hosting platform.
 
 ### Technology stack
 
@@ -65,6 +76,29 @@ Cypress
 - `lint`: Runs JavaScript and TypeScript linting.
 - `sonarqube`: Runs linting, tests with coverage, and sends results to SonarQube for analysis.
 - `cypress`: Runs Cypress tests.
+
+
+
+### Generate SonarQube Test Coverage Report
+
+1. Run Jest Tests with Coverage
+
+   npm run test -- --coverage
+
+   or 
+
+   npm run test & npm run coverage
+
+2. Push your changes on the repo, once pushed there is a action created for running the sonar scanner,      which will scan the code and generate the sonar report for us.
+
+3. Verify Results in SonarQube Dashboard
+
+Once the analysis completes:
+
+- Visit your SonarQube Dashboard to view the results.
+- You should see code coverage percentages under the "Coverage" section.
+- Test execution and other test-related metrics will be displayed on the dashboard as well.
+   
 
 ### Sonar Report
 
