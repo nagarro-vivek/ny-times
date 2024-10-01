@@ -162,9 +162,11 @@ A library for measuring important web performance metrics like page load and int
     - Test execution and other test-related metrics will be displayed on the dashboard as well.
    
 
-### Sonar Report Screenshot
+### Sonar Report
 
 ![Sonar report](public/sonar.png)
+
+[Sonar Link](https://sonarcloud.io/summary/overall?id=nagarro-vivek_ny-times2)
 
 ## Architecture Design
 
